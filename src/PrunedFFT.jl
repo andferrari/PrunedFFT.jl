@@ -1,16 +1,16 @@
-module PruneFFT
+module PrunedFFT
 
 using FFTW
 
-export prune_fft
+export pruned_fft
 
 """
-    prune_fft(x::Matrix{Float64}, n_pad::Int, k_span::Vector{Int64})
+    pruned_fft(x::Matrix{Float64}, n_pad::Int, k_span::Vector{Int64})
 
-    Compute the FFT of a (n, n) matrix x zero padded to (n_pad, n_pad)
-    at frequencies (k, l), k \in k_span, l \in k_span.
+    Compute the FFT of a (n, n) matrix x zero padded to (n\\_pad, n\\_pad)
+    at frequencies (k, l), k ∈ k\\_span, l ∈ k\\_span.
 """
-function prune_fft(x::Matrix{Float64}, n_pad::Int, k_span::Vector{Int64})
+function pruned_fft(x::Matrix{Float64}, n_pad::Int, k_span::Vector{Int64})
 
     n, l = size(x)
     nk = length(k_span)
@@ -35,4 +35,4 @@ function prune_fft(x::Matrix{Float64}, n_pad::Int, k_span::Vector{Int64})
     p_fft
 end
 
-end # module PruneFFT
+end # module PrunedFFT

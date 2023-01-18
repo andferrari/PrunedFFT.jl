@@ -10,7 +10,7 @@ x = rand(n, n)
 n_pad = 1024
 k_span = collect(512:612)
 
-f1 = prune_fft(x, n_pad, k_span)
+f1 = pruned_fft(x, n_pad, k_span)
 ```
 
 
