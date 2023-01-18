@@ -1,7 +1,7 @@
-using PruneFFT
-using FFTW
+using PrunedFFT
 using Test
 
+using FFTW # to compute f2
 
 n = 128
 n_pad = 1024
