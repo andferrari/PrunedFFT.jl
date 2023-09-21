@@ -5,7 +5,7 @@ using FFTW
 export pruned_fft
 
 """
-    pruned_fft(x::Matrix{Float64}, n_pad::Int, k_span::Vector{Int64})
+pruned_fft(x::Matrix{T}, n_pad::Int, k_span::Vector{Int}) where {T <: Real}
 
     Compute the FFT of a (n, n) matrix x zero padded to (n\\_pad, n\\_pad)
     at frequencies (k, l), k ∈ k\\_span, l ∈ k\\_span.
