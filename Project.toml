@@ -1,4 +1,5 @@
 name = "PrunedFFT"
+uuid = "d0fc5501-de35-42a1-bf43-cb2a8479854b"
 authors = ["André Ferrari <andferrari@gmail.com>"]
 version = "0.1.0"
 
