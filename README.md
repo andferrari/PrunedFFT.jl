@@ -21,7 +21,7 @@ using CUDA
 n = 128
 xc = cu(rand(n, n))
 
-n_pad = 1024
+n_pad = 1024^2
 k_span = collect(512:612)
 
 f1 = pruned_fft(xc, n_pad, k_span)
