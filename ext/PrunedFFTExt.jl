@@ -2,7 +2,7 @@ module PrunedFFTExt
 
 using PrunedFFT
 using FFTW
-using CUDA: CuMatrix, CUDA.zeros
+using CUDA
 
 
 """

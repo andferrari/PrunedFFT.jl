@@ -13,4 +13,17 @@ k_span = collect(512:612)
 f1 = pruned_fft(x, n_pad, k_span)
 ```
 
+If `CUDA.jl` is loaded, computation is on GPU
+```julia
+using PrunedFFT
+using CUDA
+
+n = 128
+xc = cu(rand(n, n))
+
+n_pad = 1024
+k_span = collect(512:612)
+
+f1 = pruned_fft(xc, n_pad, k_span)
+```
 
